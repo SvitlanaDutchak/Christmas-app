@@ -1,0 +1,71 @@
+.header {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 36px;
+  height: 80vh;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-basis: 40%;
+  }
+}
+
+.selebrate {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 36px;
+  height: 50vh;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-basis: 40%;
+  }
+}
+
+.giving {
+  text-align: center;
+  height: 50vh;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin-top: 48px;
+  }
+
+}
+
+.send-wish {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
