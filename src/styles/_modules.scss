@@ -1,3 +1,14 @@
+.mode-button {
+  padding: 4px 12px;
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+    background: $first-red-color;
+  }
+
+}
+
 .button {
   border: none;
   background-color: $first-red-color;

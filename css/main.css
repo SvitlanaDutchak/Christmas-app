@@ -119,13 +119,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 50vh;
+  height: 60vh;
 }
 .send-wish__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
+}
+
+.gifts {
+  text-align: center;
+}
+.gifts__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: start;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 48px 0;
 }
 
 .nav__items {

@@ -1,4 +1,5 @@
 import React from "react";
+import { slide as Menu } from "react-burger-menu";
 
 const menuItems = [
   { label: "Home", path: "/" },
@@ -7,26 +8,27 @@ const menuItems = [
   { label: "New", path: "/new" },
 ];
 
-const MenuItem = ({ children, path }) => {
+const NavigationItems = ({ path }) => {
   return (
-    <li className="nav__item">
-      <a className="nav__link" href="#">
-        {children}
-      </a>
-    </li>
+    <ul className="nav__items">
+      {menuItems.map((item) => (
+        <li className="nav__item" key={item.label} path={item.path}>
+          <a className="nav__link" href="#">
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 };
 
-export const Menu = () => {
+export const Navigation = () => {
   return (
     <nav className="nav">
-      <ul className="nav__items">
-        {menuItems.map((item) => (
-          <MenuItem key={item.label} path={item.path}>
-            {item.label}
-          </MenuItem>
-        ))}
-      </ul>
+      {/* <Menu width={"280px"}>
+        <NavigationItems />
+      </Menu> */}
+      <NavigationItems />
     </nav>
   );
 };
